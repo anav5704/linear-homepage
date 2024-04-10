@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --nav-height: 48px;
+  }
+
   html {
     @apply bg-background font-sans text-off-white;
   }

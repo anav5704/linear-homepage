@@ -1,6 +1,11 @@
-export const Container = ({ children }: { children: React.ReactNode }) => {
+interface ContainerProps {
+    children: React.ReactNode,
+    className?: string
+}
+
+export const Container = ({ children, className }: ContainerProps) => {
     return (
-        <section className='max-w-[1200px] mx-auto'>
+        <section className={`${className} max-w-[1200px] mx-auto`}>
             {children}
         </section>
     )
