@@ -6,7 +6,7 @@ import { Button } from "./button"
 export const Header = () => {
     return (
         <header className="fixed top-0 left-0 w-full border-b border-white/10 backdrop-blur-[12px]">
-            <Container className="w-3/4 text-[15px] font-medium h-[--nav-height]">
+            <Container className="text-[15px] font-medium h-[--nav-height]">
                 <nav className="h-full">
                     <ul className="flex items-center justify-between h-full">
                         <li>
