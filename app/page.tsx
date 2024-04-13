@@ -1,11 +1,12 @@
 import { HeroSubtitle } from "../components/hero-subtitle"
 import { HeroTitle } from "../components/hero-title"
 import { Container } from "../components/container"
-import Image from "next/image"
+import { Button } from "../components/button"
 
 export default function Home() {
     return ( 
         <Container>
+            <Button href="/">Button</Button>
             <HeroTitle>
                 Linear is a better way
                 <br />
@@ -16,6 +17,7 @@ export default function Home() {
                 <br />
                 Streamline issues, sprints, and product roadmaps.
             </HeroSubtitle>
+            <Button href="/">Button</Button>
             <img
                 src="/images/hero.webp"
                 alt="hero image"

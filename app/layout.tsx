@@ -20,7 +20,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className}>
                 <Header />
-                <main className="pt-[--nav-height]">
+                <main className="glow-gradient pt-[--nav-height]">
                     {children}
                 </main>
                 <Footer />
