@@ -1,7 +1,42 @@
 import { Container } from "./container"
 import { Logo } from '../public/logo'
-import Link from "next/link"
 import { Button } from "./button"
+import Link from "next/link"
+
+const links = [
+    {
+        label: "Features",
+        href: "/",
+    },
+    {
+        label: "Method",
+        href: "/",
+    },
+    {
+        label: "Customers",
+        href: "/",
+    },
+    {
+        label: "Changelog",
+        href: "/",
+    },
+    {
+        label: "Pricing",
+        href: "/",
+    },
+    {
+        label: "Company",
+        href: "/",
+    },
+    {
+        label: "Contact",
+        href: "/",
+    },
+    {
+        label: "Log In",
+        href: "/",
+    },
+]
 
 export const Header = () => {
     return (
@@ -10,34 +45,17 @@ export const Header = () => {
                 <nav className="h-full">
                     <ul className="flex items-center justify-between h-full">
                         <li>
-                            <Link href="/" className="flex items-center" >
+                            <Link href="/" className="flex items-center text-off-white backdrop-blur-[12px]" >
                                 <Logo className="h-[18px] w-[18px] mr-3" /> Linear
                             </Link>
                         </li>
-                        <li>
-                            <Link href="/">Features</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Method</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Customers</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Changelog</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Pricing</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Company</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Contact</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Log In</Link>
-                        </li>
+                        {links.map((link, index) => (
+                            <li key={index}>
+                                <Link href={link.href}>
+                                    {link.label}
+                                </Link>
+                            </li>
+                        ))}
                         <li>
                             <Button href="/">Sign In</Button>
                         </li>

@@ -6,11 +6,11 @@ interface ButtonProps extends VariantProps<typeof buttonClasses> {
     href: string
 }
 
-const buttonClasses = cva("rounded-full inline-flex items-center", {
+const buttonClasses = cva("rounded-full inline-flex items-center mx-auto", {
     variants: {
         variant: {
             primary: "bg-gradient",
-            secondary: "",
+            secondary: "text-off-white  bg-white/10 border border-white/5",
             tertiary: ""
         },
         size: {

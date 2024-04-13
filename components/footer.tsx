@@ -105,7 +105,7 @@ export const Footer = () => {
         <footer className="py-[56px] border-t border-white/10 text-white/50 text-[15px] mt-20">
             <Container className="flex justify-between">
                 <div className="flex flex-col justify-between">
-                    <div className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer">
+                    <div className="flex items-center gap-3 hover:text-off-white transition-colors cursor-pointer">
                         <Logo className="h-4 w-4" />Linear - Designed Worldwide
                     </div>
                     <div className="flex items-center gap-5">
@@ -121,14 +121,14 @@ export const Footer = () => {
                             key={"link-" + index}
                             className="min-w-[180px]"
                         >
-                            <h4 className="text-white mb-4">
+                            <h4 className="text-off-white mb-4">
                                 {link.title}
                             </h4>
                             <ul>
                                 {link.subLinks.map((subLinks, index) => (
                                     <li
                                         key={"sub-link-" + index}
-                                        className="text-white/50 transition-colors hover:text-white mb-4 cursor-pointer"
+                                        className="text-white/50 transition-colors hover:text-off-white mb-4 cursor-pointer"
                                     >
                                         {subLinks.label}
                                     </li>
