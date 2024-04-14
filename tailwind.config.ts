@@ -23,10 +23,10 @@ const config: Config = {
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-                "glow-lines":
-                    "linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)",
+                "radial-faded": "radial-gradient(circle at bottom center,var(--color),transparent 70%)",
+                "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+                "glow-lines": "linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)",
+                "glass-gradient": "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%)",
             },
             keyframes: {
                 "fade-in": {
@@ -89,10 +89,8 @@ const config: Config = {
                 "image-rotate": "image-rotate 1400ms ease forwards",
                 "image-glow": "image-glow 4100ms 300ms ease-out forwards",
                 "sketch-lines": "sketch-lines 1200ms ease-out forwards",
-                "glow-line-horizontal":
-                    "glow-line-horizontal var(--animation-duration) ease-in forwards",
-                "glow-line-vertical":
-                    "glow-line-vertical var(--animation-duration) ease-in forwards",
+                "glow-line-horizontal": "glow-line-horizontal var(--animation-duration) ease-in forwards",
+                "glow-line-vertical": "glow-line-vertical var(--animation-duration) ease-in forwards",
                 zap: "zap 2250ms calc(var(--index) * 20ms) linear infinite",
                 bounce: "240ms ease 0s 1 running bounce",
             },

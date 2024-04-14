@@ -4,6 +4,8 @@ import { HeroTitle } from "../components/hero-title"
 import { Container } from "../components/container"
 import { CLients } from "../components/clients"
 import { Button } from "../components/button"
+import { Stars } from "../components/stars"
+import { UnlikeAnyTool } from "../components/unlike-any-tool"
 
 export default function Home() {
     return (
@@ -40,6 +42,10 @@ export default function Home() {
             </Button>
             <HeroImage />
             <CLients />
+            <div className="-z-10 mask-radial-faded after:top-[50%] after:-left-1/2 after:w-[200%] after:h-[142%] after:absolute after:bg-background after:rounded-[100%] after:border-t after:border-[rgba(120,_118,_197,_0.4)] relative before:bg-radial-faded before:inset-0 before:absolute [--color:#7877C6] h-[600px] my-[-175px] overflow-hidden">
+                <Stars />
+            </div>
+            <UnlikeAnyTool />
         </Container>
     )
 }
