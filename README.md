@@ -1,6 +1,6 @@
 # Lear Homepage 💜
 
-![hero](https://github.com/anav5704/linear-homepage/blob/main/linear-homepage.png)
+![hero](https://github.com/anav5704/linear-homepage/blob/main/docs/linear-homepage.png)
 
 This is a simple (and incomplete) clone of the the Linear.app homepage. The website has loads of cool animations and looks very modern.
 
